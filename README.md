@@ -39,3 +39,20 @@ The system supports both **encoding** and **decoding**, ensures data integrity u
 ## 📄 Full Project Report
 📥 [Download the Full Report](Project_Report.pdf)
 ---
+## ⭐ Support This Project
+
+If you found this repository helpful or learned something new, please consider giving it a ⭐ star — it motivates me to keep building and sharing more projects like this!  
+
+> [🌟 Click here to star the repository](https://github.com/reddyganeshbathala/Steganography-LSB-BMP)
+
+Thank you for your support! 😊
+
+---
+
+## 🙋‍♂️ About Me
+
+**Reddy Ganesh B**  
+B.E. Electronics and Communication Engineering  
+Passionate about Embedded Systems, C Programming, and building practical projects.  
+
+🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/reddy-ganesh-bathala-790954325) | [GitHub](https://github.com/reddyganeshbathala)
