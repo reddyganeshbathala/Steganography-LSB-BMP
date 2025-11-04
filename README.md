@@ -36,9 +36,6 @@ The system supports both **encoding** and **decoding**, ensures data integrity u
 ### Decoding
       ./steganography -d Encoded_Image.bmp
 ---
-## 📄 Full Project Report
-📥 [Download the Full Report](Project_Report.pdf)
----
 ## ⭐ Support This Project
 
 If you found this repository helpful or learned something new, please consider giving it a ⭐ star — it motivates me to keep building and sharing more projects like this!  
