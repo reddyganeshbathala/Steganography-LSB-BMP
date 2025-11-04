@@ -67,7 +67,7 @@ If this project helped you or you learned something new, please leave a ⭐ on G
 B.Tech, Electronics and Communication Engineering  
 Passionate about Embedded Systems, C Programming & Real-world Projects
 
-🔗 **LinkedIn:** https://www.linkedin.com/in/reddy-ganesh-bathala-790954325  
+🔗 **LinkedIn:** https://www.linkedin.com/in/reddyganeshbathala 
 🔗 **GitHub:** https://github.com/reddyganeshbathala
 
 ---
