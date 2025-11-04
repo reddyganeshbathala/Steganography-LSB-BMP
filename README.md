@@ -1,55 +1,74 @@
-# Steganography-LSB-BMP
+# 🔒 Steganography-LSB-BMP  
+*A C-based image steganography system using Least Significant Bit (LSB) encoding*
 
-A C-based implementation of **image steganography** using the **Least Significant Bit (LSB)** technique to securely hide and retrieve files within 24-bit BMP images without altering their visual quality.
-
-## 📜 Abstract
-Steganography is the art of concealing information within non-secret media to avoid detection.  
-This project implements LSB-based steganography in C to hide a secret file inside a BMP image and retrieve it later.  
-The system supports both **encoding** and **decoding**, ensures data integrity using a magic string, and preserves the image’s appearance.
+This project implements **image steganography** in C using the **Least Significant Bit (LSB)** technique to hide and retrieve secret files inside 24-bit BMP images without changing their visible quality.  
+It supports encoding, decoding, magic string verification, and works across multiple platforms.
 
 ---
 
-## 📂 Features
-- **Encode Secret Files** – Hide any file (text, code, scripts) inside a BMP image.
-- **Decode Hidden Files** – Extract hidden files from stego images.
-- **Magic String Verification** – Confirms the presence of hidden data.
-- **Supports Multiple File Types** – Works with `.txt`, `.c`, `.sh`, etc.
-- **Error Handling** – Clear success and failure messages.
-- **Data Integrity** – Ensures extracted data matches the original.
-- **Cross-Platform** – Works on Windows, Linux, and macOS.
+## ✅ Features
+✔ Hide any type of file (`.txt`, `.c`, `.sh`, etc.) inside a BMP image  
+✔ Extract the hidden file perfectly during decoding  
+✔ Uses **Magic String (#*)** to ensure the image actually contains hidden data  
+✔ Maintains original BMP image quality  
+✔ Error handling for invalid inputs and file formats  
+✔ Works on Windows, Linux, and macOS (GCC compatible)
 
 ---
 
-## 🛠 Requirements
-**Software:**
-- OS: Windows / Linux / macOS
-- Compiler: GCC or any standard C compiler
-- Editor/IDE: Code::Blocks, VS Code, Turbo C, Vim, etc.
-- Terminal: Command Prompt / Linux Terminal / macOS Terminal
+## 📂 File Structure
+
+| File | Description |
+|------|-------------|
+| `main.c` | Controls encoding/decoding flow and CLI |
+| `encode.c / encode.h` | Logic for hiding data into the image |
+| `decode.c / decode.h` | Logic for extracting hidden data |
+| `types.h` | Custom data types and enums |
+| `common.h` | Magic string (#*) used for validation |
+| `secret.txt` | Example secret file |
+| `Input_image.bmp` | Original BMP image |
+| `Encoded_Image.bmp` | Output image with hidden data |
+| `Decoded_File.txt` | Extracted file after decoding |
 
 ---
 
-## 🚀 Usage
+## 🚀 How It Works (Internals)
+- Reads BMP header (54 bytes) without modification  
+- Embeds magic string → file extension → file size → secret file data  
+- Uses **LSB of each byte** so image quality remains unchanged  
+- During decoding, verifies magic string, then reconstructs the hidden file
+
+---
+
+## 🔧 Requirements
+- GCC or any standard C compiler  
+- Windows / Linux / macOS terminal  
+- 24-bit BMP image as input  
+
+---
+
+## 🛠 Usage
 
 ### Encoding
       ./steganography -e Original_input.bmp secret.txt
 ### Decoding
       ./steganography -d Encoded_Image.bmp
 ---
+
 ## ⭐ Support This Project
+If this project helped you or you learned something new, please leave a ⭐ on GitHub — it motivates future work and improvements!
 
-If you found this repository helpful or learned something new, please consider giving it a ⭐ star — it motivates me to keep building and sharing more projects like this!  
-
-> [🌟 Click here to star the repository](https://github.com/reddyganeshbathala/Steganography-LSB-BMP)
-
-Thank you for your support! 😊
+👉 **https://github.com/reddyganeshbathala/Steganography-LSB-BMP**
 
 ---
 
-## 🙋‍♂️ About Me
-
+## 👤 Author
 **Reddy Ganesh B**  
-B.E. Electronics and Communication Engineering  
-Passionate about Embedded Systems, C Programming, and building practical projects.  
+B.Tech, Electronics and Communication Engineering  
+Passionate about Embedded Systems, C Programming & Real-world Projects
 
-🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/reddy-ganesh-bathala-790954325) | [GitHub](https://github.com/reddyganeshbathala)
+🔗 **LinkedIn:** https://www.linkedin.com/in/reddy-ganesh-bathala-790954325  
+🔗 **GitHub:** https://github.com/reddyganeshbathala
+
+---
+
