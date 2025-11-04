@@ -62,12 +62,11 @@ If this project helped you or you learned something new, please leave a ⭐ on G
 
 ---
 
-## 👤 Author
+## 🙋‍♂️ About Me
+
 **Reddy Ganesh B**  
 B.E. Electronics and Communication Engineering  
-Passionate about Embedded Systems, C Programming & Real-world Projects
-
-🔗 **LinkedIn:** https://www.linkedin.com/in/reddyganeshbathala  
-🔗 **GitHub:** https://github.com/reddyganeshbathala
+Passionate about Embedded Systems, C Programming, and building practical projects.  
+🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/reddyganeshbathala)| [GitHub](https://github.com/reddyganeshbathala)
 
 
